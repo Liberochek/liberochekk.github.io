@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Для моей любимой 💖</title>
+
+<style>
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+
+body {
+
+    overflow:hidden;
+    background:#ffd1e6;
+    color:#7a1f4d;
+
+}
+
+
+/* Контейнер страниц */
+
+.container {
+
+    display:flex;
+    width:200vw;
+    height:100vh;
+
+    transition:transform 1.2s ease;
+
+}
+
+
+
+/* Страницы */
+
+.page {
+
+    width:100vw;
+    height:100vh;
+    flex-shrink:0;
+
+}
+
+
+/* Первая страница */
+
+
+.first {
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(
+    rgba(255,192,218,.8),
+    rgba(255,170,205,.8)
+    );
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+
+.box {
+
+    background:rgba(255,255,255,.45);
+    backdrop-filter:blur(10px);
+
+    padding:50px;
+    border-radius:35px;
+
+    animation:show 1.5s;
+
+}
+
+
+h1 {
+
+    font-size:55px;
+    margin-bottom:20px;
+
+}
+
+
+p {
+
+    font-size:22px;
+    margin-bottom:30px;
+
+}
+
+
+
+button {
+
+    border:none;
+    padding:16px 40px;
+
+    background:#ff5c9d;
+    color:white;
+
+    border-radius:40px;
+
+    font-size:20px;
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+button:hover {
+
+    transform:scale(1.1);
+
+}
+
+
+
+
+/* Сердечки */
+
+
+.heart {
+
+    position:absolute;
+    bottom:-50px;
+
+    animation:heartMove linear infinite;
+
+}
+
+
+.heart:nth-child(1){
+left:10%;
+animation-duration:10s;
+}
+
+.heart:nth-child(2){
+left:30%;
+animation-duration:12s;
+}
+
+.heart:nth-child(3){
+left:50%;
+animation-duration:8s;
+}
+
+.heart:nth-child(4){
+left:70%;
+animation-duration:11s;
+}
+
+.heart:nth-child(5){
+left:90%;
+animation-duration:9s;
+}
+
+
+@keyframes heartMove {
+
+0%{
+
+transform:translateY(0);
+opacity:0;
+
+}
+
+
+20%{
+
+opacity:1;
+
+}
+
+
+100%{
+
+transform:translateY(-110vh);
+opacity:0;
+
+}
+
+}
+
+
+
+/* Вторая страница */
+
+
+.second {
+
+    height:100vh;
+    overflow-y:auto;
+
+    padding:80px 10%;
+
+    background:
+    linear-gradient(
+    #ffe0ed,
+    #ffc1db
+    );
+
+}
+
+
+.second h2 {
+
+    text-align:center;
+    font-size:45px;
+    margin-bottom:40px;
+
+}
+
+
+
+.card {
+
+    background:white;
+
+    padding:30px;
+
+    margin:30px auto;
+
+    max-width:700px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+    animation:appear 1s;
+
+}
+
+
+
+@keyframes show {
+
+from {
+
+opacity:0;
+transform:scale(.8);
+
+}
+
+to {
+
+opacity:1;
+transform:scale(1);
+
+}
+
+}
+
+
+
+@keyframes appear {
+
+from {
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+to {
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<div class="container" id="pages">
+
+
+
+<!-- ПЕРВАЯ СТРАНИЦА -->
+
+
+<div class="page first">
+
+
+<div class="heart">💗</div>
+<div class="heart">💖</div>
+<div class="heart">💕</div>
+<div class="heart">💘</div>
+<div class="heart">💗</div>
+
+
+
+<div class="box">
+
+
+<h1>
+Привет, любимая 💖
+</h1>
+
+
+<p>
+Этот сайт создан для моей любимой девочки. 
+<br>
+Как ты думаешь кто она?
+</p>
+
+
+
+<button onclick="openPage()">
+Узнать кто
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- ВТОРАЯ СТРАНИЦА -->
+
+
+<div class="page second">
+
+    <!-- Сердечки на второй странице -->
+    <div class="heart second-heart">💗</div>
+    <div class="heart second-heart">💖</div>
+    <div class="heart second-heart">💕</div>
+    <div class="heart second-heart">💘</div>
+    <div class="heart second-heart">💗</div>
+
+
+    <h2>
+        Ты — моя любимая девочка 💕
+    </h2>
+
+
+    <div class="card">
+
+        <h3>
+            Почему ты особенная?
+        </h3>
+
+        <p>
+            Потому что именно ты делаешь этот мир ярче,
+            теплее и красивее.
+        </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <h3>
+            Для тебя 💗
+        </h3>
+
+        <p>
+            Я создал этот маленький сайт,
+            чтобы показать, насколько ты мне дорога.
+        </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <h3>
+            Спасибо ❤️
+        </h3>
+
+        <p>
+            Спасибо за улыбку, эмоции и счастливые моменты.
+        </p>
+
+    </div>
+
+
+    <!-- Разделитель -->
+
+    <div class="divider"></div>
+
+
+
+    <!-- Кроссворд -->
+
+    <div class="crossword">
+
+        <h2>
+            Маленький кроссворд для тебя 💖
+        </h2>
+
+
+        <div class="question">
+
+            <p>
+            1. От чего я не мог оторвать взгляд,
+            когда смотрел на тебя?
+            </p>
+
+            <input id="answer1" placeholder="Твой ответ...">
+
+        </div>
+
+
+
+        <div class="question">
+
+            <p>
+            2. Что появляется у меня,
+            когда я вижу тебя?
+            </p>
+
+            <input id="answer2" placeholder="Твой ответ...">
+
+        </div>
+
+
+
+        <div class="question">
+
+            <p>
+            3. Какое чувство я испытываю к тебе?
+            </p>
+
+            <input id="answer3" placeholder="Твой ответ...">
+
+        </div>
+
+
+
+        <button onclick="checkAnswers()">
+            Проверить 💕
+        </button>
+
+
+        <p id="result"></p>
+
+
+    </div>
+
+
+</div>

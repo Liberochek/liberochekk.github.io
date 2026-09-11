@@ -1,0 +1,129 @@
+/* Сердечки на второй странице */
+
+.second {
+    position:relative;
+    overflow:hidden;
+}
+
+
+.second-heart {
+
+    position:absolute;
+    bottom:-50px;
+
+    animation:heartMove linear infinite;
+
+    z-index:0;
+
+}
+
+
+.second-heart:nth-child(1){
+left:10%;
+animation-duration:12s;
+}
+
+
+.second-heart:nth-child(2){
+left:35%;
+animation-duration:9s;
+}
+
+
+.second-heart:nth-child(3){
+left:55%;
+animation-duration:14s;
+}
+
+
+.second-heart:nth-child(4){
+left:75%;
+animation-duration:10s;
+}
+
+
+.second-heart:nth-child(5){
+left:90%;
+animation-duration:13s;
+}
+
+
+
+/* Разделитель */
+
+.divider {
+
+    width:80%;
+    height:3px;
+
+    background:#ff75ad;
+
+    margin:50px auto;
+
+    border-radius:20px;
+
+}
+
+
+
+/* Кроссворд */
+
+.crossword {
+
+    background:rgba(255,255,255,.6);
+
+    padding:40px;
+
+    border-radius:30px;
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+
+
+.question {
+
+    margin:25px 0;
+
+}
+
+
+
+.question p {
+
+    font-size:20px;
+
+}
+
+
+
+.question input {
+
+    width:80%;
+
+    padding:15px;
+
+    border-radius:20px;
+
+    border:2px solid #ff8fbd;
+
+    font-size:18px;
+
+    outline:none;
+
+}
+
+
+
+#result {
+
+    margin-top:25px;
+
+    font-size:24px;
+
+}
